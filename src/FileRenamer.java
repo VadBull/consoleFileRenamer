@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class FileRenamer {
     public static void main(String[] args) {
 
-        String path = consoleInput();
+        String path = dirPathConsoleInput();
         String slash = "\\" + "\\";
         path.replace("\\", slash);
         path += "\\" + "\\";
@@ -14,7 +14,7 @@ public class FileRenamer {
 
         renamer(dir,degreeCountWanted, path);
     }
-    public static String consoleInput() {
+    public static String dirPathConsoleInput() {
         System.out.println("Введите путь к директории с файлами для переименования");
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();

@@ -42,7 +42,7 @@ public class FileRenamer {
         StringBuilder path = new StringBuilder(pathname);
         StringBuilder renamer = new StringBuilder();
         StringBuilder newFilename = new StringBuilder("");
-        int regularExt = 4; // File extension char count
+
         StringBuilder ext = new StringBuilder();
 
         for(String fileName : fileNames) {

@@ -55,6 +55,7 @@ public class FileRenamer {
                 }
             }
             filenameCounter++;
+
             renamer.setLength(0);
             renamer.append(path);
             renamer.append(fileName);

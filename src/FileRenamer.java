@@ -61,9 +61,7 @@ public class FileRenamer {
             ext.setLength(0);
             ext.append(renamer.toString().substring(renamer.indexOf("."), renamer.length()));
 
-
             File oldfile = new File (renamer.toString());
-
 
             renamer.setLength(0);
             renamer.append(path);

@@ -19,13 +19,13 @@ public class FileRenamer {
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
-    public static int degreeCountWantedConsoleInput () {
+    public static int degreeCountWantedConsoleInput() {
         System.out.println("Введите желаемое количество знаков в наименовании файла");
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
     }
 
-    public static void renamer (File dir, int degreeCountWanted, String pathname) {
+    public static void renamer(File dir, int degreeCountWanted, String pathname) {
         TreeSet<String> fileNames = new TreeSet();
 
         if (dir.isDirectory()) {
